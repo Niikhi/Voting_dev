@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from "../context";
+import 'animate.css';
 
 const RegisterVote = () => {
   const [firstName, setFirstName] = useState('');
@@ -24,14 +25,15 @@ const RegisterVote = () => {
     <div className="relative flex justify-center items-center h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black">
       {/* Shapes */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
-        <div className="absolute w-32 h-32 bg-purple-600 rounded-full top-1/4 left-1/4"></div>
-        <div className="absolute w-16 h-16 bg-indigo-600 rounded-full bottom-1/4 right-1/4"></div>
-        <div className="absolute w-20 h-20 bg-purple-600 rounded-full top-1/2 left-1/2"></div>
-        <div className="absolute w-24 h-24 bg-indigo-600 rounded-full bottom-1/2 right-1/2"></div>
-        <div className="absolute w-12 h-12 bg-purple-600 rounded-full top-3/4 left-3/4"></div>
-        <div className="absolute w-28 h-28 bg-indigo-600 rounded-full bottom-3/4 right-3/4"></div>
-        <div className="absolute w-16 h-16 bg-purple-600 rounded-full top-1/3 left-2/3"></div>
-        <div className="absolute w-24 h-24 bg-indigo-600 rounded-full bottom-1/3 right-2/3"></div>
+      <div className="absolute w-32 h-32 bg-purple-600 rounded-full top-1/4 left-1/4 animate-flash"></div>
+<div className="absolute w-16 h-16 bg-indigo-600 rounded-full bottom-1/4 right-1/4 animate-bounce"></div>
+<div className="absolute w-20 h-20 bg-purple-600 rounded-full top-1/2 left-1/2 animate-spin"></div>
+<div className="absolute w-24 h-24 bg-indigo-600 rounded-full bottom-1/2 right-1/2 animate-spin"></div>
+<div className="absolute w-12 h-12 bg-purple-600 rounded-full top-3/4 left-3/4 animate-"></div>
+<div className="absolute w-28 h-28 bg-indigo-600 rounded-full bottom-3/4 right-3/4 animate-"></div>
+<div className="absolute w-16 h-16 bg-purple-600 rounded-full top-1/3 left-2/3 animate-spin"></div>
+<div className="absolute w-24 h-24 bg-indigo-600 rounded-full bottom-1/3 right-2/3 animate-spin"></div>
+      
       </div>
 
       {/* Form */}

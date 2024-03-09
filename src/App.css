@@ -30,14 +30,59 @@ code {
 
 /* font-family: 'Inter', sans-serif;*/
 
+
+/* Navbar.css */
+
+.navbar {
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 1px solid hsl(219, 9%, 45%, 0.25); */
+  background: linear-gradient(
+    to right,
+    #0a0c15,
+    #232947,
+    #1b3a64,
+    #153f6e,
+    #1e242c,
+    #232a32
+  );
+  transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+/* Apply a different background when scrolled */
+.navbar.scrolled {
+  background: linear-gradient(
+    to right,
+    #05070d,
+    #101527,
+    #0d1a30,
+    #0a2141,
+    #11181e,
+    #101e24
+  );
+}
+
+/* Body Styles */
 body {
   font-size: 16px;
   font-weight: normal;
   overflow-x: hidden;
-  color: #fff;
-  background:#1F2024;
+  color: #fefcfc;
+  background: linear-gradient(
+    to right,
+    #0a0c15,
+    #232947,
+    #1b3a64,
+    #153f6e,
+    #1e242c,
+    #232a32
+  );
   position: relative;
 }
+
 
 * {
   margin: 0;
@@ -45,6 +90,9 @@ body {
   list-style-type: none;
   box-sizing: border-box;
 }
+
+
+
 
 strong {
   font-weight: 700;

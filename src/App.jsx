@@ -17,7 +17,7 @@ import Results from "./pages/Results.jsx";
 function App() {
   const [wallet, setWallet] = useState();
   const [loading, setLoading] = useState(false);
-  
+
 
 
   const updateWallet = (wallet) => {
@@ -45,9 +45,6 @@ function App() {
         <Route path="/vote" element={<Vote />} />
         <Route path="/RegisterVote" element={<Registervote />} />
         <Route path="/Results" element={<Results />} />
-          {/* <Route path="vote" element={<Vote />} /> */}
-
-        {/* Change this show something else when a page is loading. */}
         <Route path="*" element={<Spinner />} />
       </Routes>
 

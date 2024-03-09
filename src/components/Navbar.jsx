@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import "../App.css"; 
+
 
 const Navbar = ({ updateWallet, showConnectModal, wallet, loading }) => {
   const [toggleValue, setToggle] = useState(false);
@@ -24,7 +26,7 @@ const Navbar = ({ updateWallet, showConnectModal, wallet, loading }) => {
   }, [toggleValue]);
 
   return (
-    <nav className="navbar ">
+    <nav className={`navbar ${toggleValue ? "scrolled" : ""}`}>
       <div className="nav__header">
         <div
           onClick={handleToggle}
@@ -38,7 +40,7 @@ const Navbar = ({ updateWallet, showConnectModal, wallet, loading }) => {
         </div>
         <div className="navbar__logo " href="/"><Link to="/" className="text-5xl ">
 
-          <span className="text-white">d</span><span className="text-[#b95ce0] text-5xl">Vote</span>
+          <span className="text-white">Zama</span><span className="text-[#b95ce0] text-5xl">Vote</span>
         </Link>
         </div>
       </div>
